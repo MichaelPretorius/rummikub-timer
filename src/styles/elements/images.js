@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-
 export const RummiImg = styled.img`
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 15px auto;
 `;

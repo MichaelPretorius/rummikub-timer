@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getPosition, getColor } from '../../styles';
+import { getPosition, getColor } from './utils';
 
 export const Display = styled.h1`
   text-align: ${props => getPosition(props)};

@@ -5,22 +5,20 @@ import { GlobalStyle } from '../styles/globalStyles';
 import theme from '../styles/theme';
 import Timer from './Timer';
 import { Container, Wrapper, RummiImg } from '../styles';
-import rummikub from '../assets/rummikub.png'
+import rummikub from '../assets/images/rummikub.png';
 
 function App() {
   return (
-		<ThemeProvider theme={theme}>
-			<GlobalStyle />
-			<Container fill>
-				<Wrapper alignCenter height="90vh">
-        <RummiImg src={rummikub} alt="rummikub" />
-					<Wrapper justifyCenter>
-            <Timer />
-          </Wrapper>
-				</Wrapper>
-			</Container>
-		</ThemeProvider>
-	);
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Container fill fillHeight>
+        <Wrapper alignCenter height="100%" justifyBetween>
+          <RummiImg src={rummikub} alt="rummikub" />
+          <Timer />
+        </Wrapper>
+      </Container>
+    </ThemeProvider>
+  );
 }
 
 export default App;

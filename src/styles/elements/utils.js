@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 export const getColor = (
   { color, primary, secondary, accent, grayScale, theme },
-  defaultColor,
+  defaultColor
 ) => {
   if (color) return color;
   if (primary) return theme.primaryColor;
@@ -87,7 +87,7 @@ export const Container = styled(({ fill, fillHeight, ...rest }) => (
 ))`
   max-width: ${({ fill }) => (fill ? '100%' : '1140px')};
   margin: 0 auto;
-  padding: 15px 15px 0;
+  padding: 0 15px;
   box-sizing: border-box;
   height: ${({ fillHeight }) => (fillHeight ? '100vh' : 'auto')};
 `;
